@@ -1,0 +1,89 @@
+*{
+    list-style-type:none;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: max-content;
+    margin: 0 auto;
+}
+.header-container{
+background-color: antiquewhite;
+width: 1112px;
+height: 44px;
+}
+.logo{
+    display: inline-block;
+    /* padding: 33px; */
+}
+.header-links{
+    display: inline-block;
+    float: right;
+   
+}
+.header-links>ul>li{
+display: inline-block;
+}
+.header-links a{
+    color: black;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.header-links li a:hover {
+    color: #0056b3;
+    
+}
+.home a{
+    color: #0056b3;
+}
+.blog{
+    position: relative;
+    
+}
+.blog:hover li{
+    
+}
+.blog-links{
+    display: none;
+    position: absolute;
+    right: 25px
+    
+}
+.blog-links>li>a{
+    padding: 0 16px
+}
+.blog:hover ul{
+    display: block;
+    background-color: blueviolet;
+    width: 109px
+
+}
+.pages-links{
+    display: none;
+    position: absolute;
+    right: 15px
+}
+.pages{
+    position: relative;
+}
+.pages>ul a{
+    padding: 0 16px
+}
+.pages:hover ul{
+    display: block;
+    position: absolute;
+    background-color: blueviolet;
+}
+.level li{
+    display: none;
+}
+.level:hover li {
+    display: block;
+}
+.level>ul{
+    width: 99px;
+    right: 120px;
+    top: 19px;
+}
