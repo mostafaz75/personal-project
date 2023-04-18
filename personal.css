@@ -1,89 +1,126 @@
-*{
-    list-style-type:none;
+* {
+  list-style-type: none;
 }
-body{
-    padding: 0;
-    margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
-.container{
-    width: max-content;
-    margin: 0 auto;
+.container {
+  width: max-content;
+  margin: 0 auto;
 }
-.header-container{
-background-color: antiquewhite;
-width: 1112px;
-height: 44px;
+/* header css code {start}} */
+.header-container {
+  background-color: antiquewhite;
+  width: 1112px;
+  height: 44px;
 }
-.logo{
-    display: inline-block;
-    /* padding: 33px; */
+
+/* header logo css code {start} */
+.logo {
+  display: inline-block;
+  /* padding: 33px; */
 }
-.header-links{
-    display: inline-block;
-    float: right;
-   
+/* header logo css code {end} */
+/* header links css code [start] */
+.header-links {
+  display: inline-block;
+  float: right;
 }
-.header-links>ul>li{
-display: inline-block;
+.header-links > ul > li {
+  display: inline-block;
 }
-.header-links a{
-    color: black;
-    padding: 0 10px;
-    text-decoration: none;
+.header-links a {
+  color: black;
+  padding: 0 10px;
+  text-decoration: none;
 }
 .header-links li a:hover {
-    color: #0056b3;
-    
+  color: #0056b3;
 }
-.home a{
-    color: #0056b3;
+.home a {
+  color: #0056b3;
 }
-.blog{
-    position: relative;
-    
-}
-.blog:hover li{
-    
-}
-.blog-links{
-    display: none;
-    position: absolute;
-    right: 25px
-    
-}
-.blog-links>li>a{
-    padding: 0 16px
-}
-.blog:hover ul{
-    display: block;
-    background-color: blueviolet;
-    width: 109px
 
+/* blog links header links css code [start] */
+
+
+.blog {
+  position: relative;
+ 
+  transition-property: all;
+  transition-duration: 3s;
+  transition-delay: 5s; 
 }
-.pages-links{
-    display: none;
-    position: absolute;
-    right: 15px
+.blog:hover ul {
+  display: block;
+  background-color: blueviolet;
+  width: 109px;
+  visibility: visible;
+  
 }
-.pages{
-    position: relative;
+.blog-links {
+  /* display: none; */
+  position: absolute;
+  right: 25px;
+  top: 29px;
+  visibility: hidden;
+  transition-property: all;
+    transition-duration: .2s;
+    transition-delay: .2s;
+    width: 113px;
 }
-.pages>ul a{
-    padding: 0 16px
+.blog-links > li > a {
+  padding: 0 16px;
 }
-.pages:hover ul{
-    display: block;
-    position: absolute;
-    background-color: blueviolet;
+/* blog links header links css code [end] */
+
+  /* pages links header links css code [start] */
+.pages-links {
+  /* display: none; */
+  position: absolute;
+  right: 15px;
+  top: 29px;
+  visibility: hidden;
+  transition-property: all;
+    transition-duration: .2s;
+    transition-delay: .2s;
+    width: 113px;
 }
-.level li{
-    display: none;
+.pages {
+  position: relative;
+}
+.pages > ul a {
+  padding: 0 16px;
+}
+.pages:hover>ul {
+  display: block;
+  position: absolute;
+  background-color: blueviolet;
+  visibility: visible;
+}
+.level li {
+  /* display: none; */
+  transition-property: all;
+    transition-duration: .2s;
+    transition-delay: .2s;
+    visibility: hidden;
 }
 .level:hover li {
-    display: block;
+  display: block;
+  visibility: visible;
+  background-color: blueviolet;
 }
-.level>ul{
-    width: 99px;
-    right: 120px;
-    top: 19px;
+.level ul {
+  width: 99px;
+  right: 151px;
+  top: 19px;
+  position: absolute;
+  background-color: blueviolet;
+  visibility: hidden;
 }
+
+ /* pages links header links css code [end] */
+
+
+/* header links css code [end] */
