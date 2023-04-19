@@ -11,9 +11,12 @@ body {
 }
 /* header css code {start}} */
 .header-container {
-  background-color: antiquewhite;
-  width: 1112px;
+  background-color: rgb(243, 238, 238);
+  width: fit-content;
   height: 44px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 /* header logo css code {start} */
@@ -47,16 +50,16 @@ body {
 
 .blog {
   position: relative;
- 
   transition-property: all;
   transition-duration: 3s;
   transition-delay: 5s; 
 }
 .blog:hover ul {
   display: block;
-  background-color: blueviolet;
-  width: 109px;
+  background-color: rgb(247, 244, 244);
+  width: 156px;
   visibility: visible;
+  
   
 }
 .blog-links {
@@ -68,8 +71,13 @@ body {
   transition-property: all;
     transition-duration: .2s;
     transition-delay: .2s;
-    width: 113px;
+    width:156px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  line-height: 2;
 }
+
 .blog-links > li > a {
   padding: 0 16px;
 }
@@ -85,7 +93,11 @@ body {
   transition-property: all;
     transition-duration: .2s;
     transition-delay: .2s;
-    width: 113px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    text-align: left;
 }
 .pages {
   position: relative;
@@ -96,7 +108,7 @@ body {
 .pages:hover>ul {
   display: block;
   position: absolute;
-  background-color: blueviolet;
+  background-color: rgb(243, 243, 243);
   visibility: visible;
 }
 .level li {
@@ -109,15 +121,20 @@ body {
 .level:hover li {
   display: block;
   visibility: visible;
-  background-color: blueviolet;
+  background-color: rgb(234, 232, 232);
+  
 }
 .level ul {
-  width: 99px;
+  width: 161px;
   right: 151px;
   top: 19px;
   position: absolute;
-  background-color: blueviolet;
+  background-color: rgb(244, 239, 239);
   visibility: hidden;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  text-align: left;
 }
 
  /* pages links header links css code [end] */
