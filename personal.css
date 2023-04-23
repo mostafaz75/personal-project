@@ -1,22 +1,36 @@
 * {
   list-style-type: none;
+  font-family: "Poppins", sans-serif;
 }
+
 body {
   padding: 0;
   margin: 0;
 }
 .container {
   width: max-content;
-  margin: 0 auto;
+  width: 100vw;
+  text-align: -webkit-center;
+  /* background:rgb(243, 243, 243);; */
 }
 /* header css code {start}} */
+.header{
+  background:rgb(243, 243, 243);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  
+}
 .header-container {
-  background-color: rgb(243, 238, 238);
-  width: fit-content;
+  /* background-color: rgb(243, 238, 238); */
+  width:1111px;
   height: 44px;
   font-size: 12px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+  /* margin: 0 auto; */
+  /* position: fixed */
 }
 
 /* header logo css code {start} */
@@ -29,9 +43,11 @@ body {
 .header-links {
   display: inline-block;
   float: right;
+  margin-left: 112px;
 }
 .header-links > ul > li {
   display: inline-block;
+  padding: 0 10px;
 }
 .header-links a {
   color: black;
@@ -47,20 +63,17 @@ body {
 
 /* blog links header links css code [start] */
 
-
 .blog {
   position: relative;
-  transition-property: all;
-  transition-duration: 3s;
-  transition-delay: 5s; 
+  /* transition-property: all; */
+  /* transition-duration: 3s; */
+  /* transition-delay: 5s; */
 }
 .blog:hover ul {
   display: block;
   background-color: rgb(247, 244, 244);
   width: 156px;
   visibility: visible;
-  
-  
 }
 .blog-links {
   /* display: none; */
@@ -69,21 +82,37 @@ body {
   top: 29px;
   visibility: hidden;
   transition-property: all;
-    transition-duration: .2s;
-    transition-delay: .2s;
-    width:156px;
-    margin: 0;
-    padding: 0;
-    text-align: left;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+  width: 156px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
   line-height: 2;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
 .blog-links > li > a {
-  padding: 0 16px;
+  padding-right: 85px
 }
 /* blog links header links css code [end] */
 
-  /* pages links header links css code [start] */
+/* pages links header links css code [start] */
+
+.pages {
+  position: relative;
+  
+}
+.pages > ul a {
+  padding-right: 90px
+}
+.pages:hover > ul {
+  display: block;
+  position: absolute;
+  background-color: rgb(243, 243, 243);
+  visibility: visible;
+}
+
 .pages-links {
   /* display: none; */
   position: absolute;
@@ -91,38 +120,29 @@ body {
   top: 29px;
   visibility: hidden;
   transition-property: all;
-    transition-duration: .2s;
-    transition-delay: .2s;
-    width: 150px;
-    margin: 0;
-    padding: 0;
-    line-height: 2;
-    text-align: left;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  text-align: left;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
-.pages {
-  position: relative;
-}
-.pages > ul a {
-  padding: 0 16px;
-}
-.pages:hover>ul {
-  display: block;
-  position: absolute;
-  background-color: rgb(243, 243, 243);
-  visibility: visible;
-}
+
 .level li {
   /* display: none; */
   transition-property: all;
-    transition-duration: .2s;
-    transition-delay: .2s;
-    visibility: hidden;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+  visibility: hidden;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  
 }
 .level:hover li {
   display: block;
   visibility: visible;
   background-color: rgb(234, 232, 232);
-  
 }
 .level ul {
   width: 161px;
@@ -135,9 +155,62 @@ body {
   padding: 0;
   line-height: 2;
   text-align: left;
+   
 }
 
- /* pages links header links css code [end] */
-
-
+/* pages links header links css code [end] */
 /* header links css code [end] */
+
+
+
+/* main css code [statr] */
+
+/* rowone css code [start] */
+.rowone{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9ff;
+    height: 750px
+}
+/* rowone left css code [start] */
+.rowone-left{
+  text-align: left;
+  margin-bottom: 142px;
+    margin-right: 127px;
+}
+.rowone-left p{
+  opacity: .5;
+}
+.rowone-left h1{
+  margin: 20px 0;
+  font-size: 60px;
+}
+.rowone-left a{
+  text-decoration: none;
+  color: white;
+  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  display: inline-block;
+  line-height: 42px;
+  padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 500;
+    box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.3);
+}
+
+/* rowone left css code [end] */
+
+/* rowone right css code [start] */
+.rowone-right{
+  margin-left: 11px;
+  display: flex;
+}
+/* rowone right css code [end] */
+
+/* rowone css code [end] */
+
+
+
+/* main css code [end] */
