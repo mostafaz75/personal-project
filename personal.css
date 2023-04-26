@@ -191,9 +191,34 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   font-weight: 500;
+  position: relative;
+}
+.rowone-left a::after {
+  content: "hey";
+  display: block;
+  position: absolute;
+  top: 42px;
+  /* bottom: px; */
+  color: black;
+  visibility: hidden;
+  transition: all;
+  transition-duration: 1900ms;
+  transition-delay: 900ms;
+  transition-timing-function: ease-out;
+
+  font-size: 11px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.rowone-left a:hover {
   box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.3);
 }
-
+.rowone-left a:hover::after {
+  visibility: visible;
+  background-color: #777777;
+  font-size: 33px;
+  text-decoration: underline;
+}
 /* rowone left css code [end] */
 
 /* rowone right css code [start] */
@@ -216,7 +241,7 @@ body {
 }
 /* rowtwo left css code [start] */
 .rowtwo-left {
-  margin-right: 162px
+  margin-right: 162px;
 }
 /* rowtwo left css code [end] */
 
@@ -241,6 +266,9 @@ body {
   padding-right: 30px;
   font-weight: 500;
   margin-top: 24px;
+ 
+}
+.rowtwo-right a:hover{
   box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.3);
 }
 
@@ -252,24 +280,24 @@ body {
 /* rowtwo right css code [end] */
 /* rowtwo css code [end] */
 
- /* rowthree css code [start] */ 
-.rowthree{
+/* rowthree css code [start] */
+.rowthree {
   padding: 120px 0;
 }
- /* rowthree bottom  css code [start] */ 
-.rowthree-bottom{
+/* rowthree bottom  css code [start] */
+.rowthree-bottom {
   display: flex;
-    flex-direction:row;
-    justify-content: center;
-    width: 1842px;
-    align-items: center;
-    flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 1842px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.rowthree-bottom img{
-width: 42px;
+.rowthree-bottom img {
+  width: 42px;
 }
-.rowthree-bottom div{
+.rowthree-bottom div {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -281,26 +309,25 @@ width: 42px;
   height: 274px;
   /* box-sizing: border-box */
 }
-.rowthree-bottom div a{
+.rowthree-bottom div a {
   text-decoration: none;
   color: black;
   font-size: 19px;
   font-weight: 600;
-  
 }
 .rowthree-bottom div:hover a {
   color: #8490ff;
   /* font-size: 22px; */
 }
-.rowthree-bottom div:hover img{
- background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+.rowthree-bottom div:hover img {
+  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
 }
-/* rowthree bottom  css code [end] */ 
+/* rowthree bottom  css code [end] */
 /* rowthree css code [end] */
 
 /* rowtfour css code [start] */
 
-.rowfour{
+.rowfour {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -308,16 +335,169 @@ width: 42px;
   background: -webkit-linear-gradient(83deg, #8490ff 0%, #62bdfc 100%);
   height: 300px;
 }
-.rowfour div{
+.rowfour div {
   padding: 0 55px;
   color: white;
 }
-.rowfour h1{
+.rowfour h1 {
   padding: 0;
   margin: 0;
 }
-.rowfour p{
+.rowfour p {
   padding: 0;
   margin: 0;
 }
+/* rowtfour css code [end] */
+
+/* rowtfive css code [start] */
+
+/* rowtfive top css code [start] */
+.rowfive {
+  padding: 100px 0;
+}
+
+.rowfive-top {
+  display: flex;
+  flex-direction: column;
+}
+.rowfive-top p {
+  padding: 0;
+  margin: 0;
+}
+/* rowtfive top css code [end] */
+
+/* rowtfive middel css code [start] */
+
+.rowfive-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.rowfive-list li {
+  padding: 0 11px;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 300ms;
+
+  text-decoration: double;
+}
+
+.rowfive-list li {
+  position: relative;
+  padding: 5px;
+}
+
+.rowfive-list li::after{
+  content: '';
+  /* border-bottom: 3px solid black; */
+  transition: all 400ms ease-in-out ;
+  width: 0%;
+  display: flex;
+  height: 3px;
+  justify-content: start;
+  background-color: #000000;
+  align-content: flex-start;
+  position: absolute;
+  bottom: 0;
+}
+.rowfive-list li:hover::after{
+  width: 50%;
+  /* transition-timing-function: ease-in-out */
+}
+/* .rowfive-list li::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  bottom: -5px;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-delay: 100ms;
+  white-space: nowrap;
+}
+.rowfive-list li:hover:before{
+  width: 25%;
+} */
+/* rowtfive middel css code [end] */
+/* rowtfive bottom css code [start] */
+.rowfive-bottom {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 888px;
+  flex-wrap: wrap;
+  gap: 50px 26px;
+}
+.rowfive-bottom:hover {
+  /* color: #0056b3; */
+}
+.Vinyl{
+  /* transition: all 500ms ease-in-out; */
+}
+.Vinyl::after{
+  content:url(Images/preview.png.webp) ;
+  background-color: #8490ff;
+  opacity: .0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 120px;
+  visibility: hidden;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function:ease-in;
+}
+.Vinyl:hover::after{
+  visibility: visible;
+  opacity: .7;
+}
+/* rowtfive bottom css code [end] */
 /* main css code [end] */
+.rowfive-bottom div {
+  position: relative;
+}
+/* .rowfive-bottom div::before{
+  content: "";
+  position: absolute;
+  width: 100% ;
+  height: 100%;
+  background-color: #8490ff6d;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+}
+.rowfive-bottom div:hover::before{
+  opacity: 1;
+  visibility: visible;
+} */
+.rowfive-bottom div .overlay {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+.rowfive-bottom div:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  opacity: 0.85;
+}
