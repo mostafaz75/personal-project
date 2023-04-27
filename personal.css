@@ -722,3 +722,49 @@ position: relative;
 }
 /* plan css code [end] */
 /* choose plan css code [end] */
+
+/* lastest-post css code [start] */
+
+
+/* lastest-top css code [start] */
+.lastest-top{
+  margin-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+
+}
+.lastest-top p {
+  margin: 0;
+  padding: 0;
+}
+
+/* lastest-top css code [end] */
+
+/* post css code [start] */
+.posts{
+  display: flex;
+  flex-direction: row;
+}
+.post{
+  display: flex;
+  flex-direction: column;
+}
+
+.Mark-Wiens{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: center;
+  justify-content: flex-start;
+  width: 48%;
+  margin: 0 auto;
+}
+
+.Mark-Wiens a{
+  padding-left: 15px;
+}
+/* post css code [end] */
+
+
+/* lastest-post css code [end] */
