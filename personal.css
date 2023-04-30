@@ -849,3 +849,14 @@ body {
 /* posts css code [end] */
 /* lastest-post css code [end] */
 /* post-container css code [end] */
+
+/* brnd css code [start] */
+.brand{
+  background-color: #8490ff;
+  padding: 80px 0;
+}
+.brand img{
+  padding: 33px;
+  opacity: .5;
+}
+/* brnd css code [end] */
