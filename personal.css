@@ -8,12 +8,7 @@ body {
   padding: 0;
   margin: 0;
 }
-.container {
-  width: max-content;
-  width: 100vw;
-  text-align: -webkit-center;
-  /* background:rgb(243, 243, 243);; */
-}
+
 /* header css code {start}} */
 .header {
   background: rgb(243, 243, 243);
@@ -28,12 +23,13 @@ body {
   display: block;
 }
 .header-container {
-  /* background-color: rgb(243, 238, 238); */
-  /* width: 1111px; */
+  
   height: 44px;
   font-size: 12px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+  display: flex;
+    justify-content: center;
 }
 
 /* header logo css code {start} */
@@ -156,7 +152,15 @@ body {
 /* header links css code [end] */
 
 /* main css code [statr] */
-
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 /* rowone css code [start] */
 .this-me {
   display: flex;
@@ -711,6 +715,7 @@ body {
   background-color: rgba(132, 144, 255, 0.1);
   border-radius: 50%;
   vertical-align: middle;
+  margin: 10px auto;
 }
 .cercile h1 {
   width: 140px;
@@ -844,9 +849,17 @@ body {
 /* post-container css code [end] */
 
 /* brnd css code [start] */
-.brand{
+.brands{
   background-color: #8490ff;
   padding: 80px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand:hover img{
+  opacity: 1;
 }
 .brand img{
   padding: 33px;
@@ -861,8 +874,9 @@ body {
     align-content: center;
     justify-content: center;
     align-items: center;
-    gap: 33px;
+    gap: 60px;
     background-color: #04091e;
+    padding:66px;
 }
 .footer p {
   color: #fff;
@@ -877,8 +891,13 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items:  flex-start;
   
+}
+.copy-right img{
+  width: 18px;
+  padding: 10px 0 0 0;
+  text-align: center;
 }
 .search{
   display: flex;
@@ -895,16 +914,41 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start
   
   }
 .footer-icon{
     display: flex;
     flex-direction: row;
+    gap: 24px;
   }
 .footer-icon  i{
 color: #fff;
+font-size: 10px;
 
+
+  }
+  .search{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  input{
+    width: 329px;
+    height: 33px;
+  }
+  form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  form img{
+    background: #8490ff;
+    width: 33px;
+    margin-top: 3px;
   }
 
 
