@@ -29,7 +29,7 @@ body {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   display: flex;
-    justify-content: center;
+  justify-content: flex-start;
 }
 
 /* header logo css code {start} */
@@ -342,10 +342,12 @@ body {
   justify-content: center;
   align-items: center;
   background: -webkit-linear-gradient(83deg, #8490ff 0%, #62bdfc 100%);
-  height: 300px;
+  padding: 95px 0px;
+  flex-direction: row;
+  text-align: center;
 }
 .statisticas div {
-  padding: 0 55px;
+  padding: 13px 55px;
   color: white;
 }
 .statisticas h1 {
@@ -898,7 +900,7 @@ body {
   width: 18px;
   padding: 10px 0 0 0;
   text-align: center;
-  a
+  
 }
 .search{
   display: flex;
@@ -952,4 +954,78 @@ font-size: 10px;
     margin-top: 3px;
   }
 
+
+@media all and (0px<=width<=1110px){
+
+  .header-links{
+  visibility: hidden;
+  }
+  .header-links::before{
+    content: "url()";
+    visibility:visible;
+    /* width: 111px; */
+  }
+  .header-links i{
+    visibility: visible;
+  }
+ .this-me-left{
+  font-size: 10px;
+ }
+ .this-me-right img{
+width: 300px;
+ }
+ 
+}
+
+
+@media all and (770px<=width<=990px){
+  .services-bottom{
+    width: 1342px;
+ }
+ .statisticas{
+  padding: 95px 193px;
+  flex-direction: row;
+ }
+ .arrow{
+  margin: 0 auto;
+  /* position:absolute; */
+  /* left: 33px; */
+ }
+ /* .Harriet-Maxwell{
+  width:330px ; 
+ }
+ .Carolyn-Craig{
+  width:330px ; 
+ }*/
+ .comment{
+  width: 333px;
+flex-direction: row;
+ }
+ .plan{
+ width: 713px;;
+  gap: 33px 0;
+ }
+ .plans{
+  padding: 30px 56px;
+ }
+} 
+
+
+@media all and (0px<=width<=770px){
+  .services-bottom{
+  flex-direction: column;
+ } 
+ .statisticas{
+  flex-direction: column;
+ }
+ .plan{
+  width: 224px;
+  
+ }
+ .plans{
+  padding:328px 144px;
+  font-size: 33px;
+ }
+ 
+}
 
